@@ -19,11 +19,15 @@ function RecipeWithId() {
 
 
   return (
-    <div className='m-auto max-w-7xl '>
+    <div className='m-auto max-w-7xl px-[10vw]'>
       {recipe && (
-       <div>
+       <div className='font-bold'>
         <img className='h-[80vh] rounded-2xl' src={recipe.image} alt=""/>
-        <p className='text-3xl font-bold px-[10vw]'>{recipe.name}</p>
+        <p className='text-3xl font-bold '>{recipe.name}</p>
+        <p>Rating: {recipe.rating}</p>
+        <p>Review: {recipe.reviewCount}</p>
+        <p>Meal Type: {recipe.mealType}</p>
+
        </div>
       )}
     </div>
