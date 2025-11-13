@@ -18,18 +18,18 @@ function RecipeWithId() {
   return (
     <div className="m-auto max-w-7xl px-[10vw]">
       {recipe ? (
-        <div className="flex flex-col md:flex-row items-center gap-10 pt-10 font-bold">
-          {/* 🖼️ Image Section */}
-          <div className="flex-1">
+        <div className="flex   items-center gap-15 pt-10 font-bold ">
+        
+          <div className="">
             <img
-              className="h-[70vh] w-full object-cover rounded-2xl shadow-lg"
+              className="h-[70vh] w-full  rounded-2xl"
               src={recipe.image}
               alt={recipe.name}
             />
           </div>
 
-          {/* 📝 Text Section */}
-          <div className="flex-1 space-y-3">
+         
+          <div className="flex-y space-y-3">
             <p className="text-4xl font-bold text-amber-700">{recipe.name}</p>
             <p className="text-lg text-gray-700">⭐ Rating: {recipe.rating}</p>
             <p className="text-lg text-gray-700">📝 Reviews: {recipe.reviewCount}</p>
